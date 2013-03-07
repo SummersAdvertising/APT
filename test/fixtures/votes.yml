@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vote_ip: MyString
+  candidate_id: 1
+
+two:
+  vote_ip: MyString
+  candidate_id: 1

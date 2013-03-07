@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  vote_yes: 1
+  vote_no: 1
+  vote_total: 1
+  candidate_hash: MyText
+
+two:
+  title: MyString
+  vote_yes: 1
+  vote_no: 1
+  vote_total: 1
+  candidate_hash: MyText
