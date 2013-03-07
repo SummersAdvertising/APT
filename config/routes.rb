@@ -1,9 +1,14 @@
 APT::Application.routes.draw do
+  
+  match 'candidates/vote_page/:candidate_title'		=> 'candidates#vote_page'
+  match 'candidates/chart_page/:candidate_title'	=> 'candidates#chart_page'
+  match 'candidates/form'											=> 'candidates#form'
+  
   resources :candidates
   
+
   
-  
-  match 'votes/make_vote/:candidate_id'		=> 'votes#make_vote'
+  match 'votes/make_vote/:candidate_title/:vote_content'		=> 'votes#make_vote'
   
   
   	

@@ -1,4 +1,42 @@
 class CandidatesController < ApplicationController
+	layout :special_layout
+	
+	def form
+	end
+	
+	def vote_page
+	
+		@candidate = Candidate.where( :title => params[ :candidate_title ] ).first
+		
+		if @candidate.nil?
+						
+			# The candidate doesn't exists
+			
+			@candidate = Candidate.new
+			@candidate.title = params[ :candidate_title ]
+			
+			@candidate.save
+		
+		end
+		
+		respond_to do | format |
+			format.html { render 'vote' }
+			 
+		end
+			
+	end
+	
+	def chart_page
+		@candidate = Candidate.where( :title => params[ :candidate_title ] ).first
+		
+		
+		respond_to do | format |
+			format.html { render 'chart' }
+		end
+		
+	end
+
+
   # GET /candidates
   # GET /candidates.json
   def index
@@ -80,4 +118,17 @@ class CandidatesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+private
+	def special_layout
+		
+		case action_name
+			when 'vote_page', 'chart_page', 'form'
+				'simple'
+			else
+				'application' 
+		end
+		
+	end
+  
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130306085658) do
+ActiveRecord::Schema.define(:version => 20130307060359) do
 
   create_table "candidates", :force => true do |t|
     t.string   "title"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20130306085658) do
     t.integer  "candidate_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "vote_content"
   end
 
 end

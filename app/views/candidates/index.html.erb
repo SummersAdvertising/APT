@@ -26,7 +26,8 @@
         <td><%= candidate.candidate_hash %></td>
         <td><%=l candidate.created_at %></td>
         <td>
-          <%= link_to 'Vote', (root_url + "votes/make_vote/" + candidate.id.to_s), :class => 'btn btn-mini' %>
+          <%= link_to 'Vote No', (root_url + "votes/make_vote/" + url_encode(candidate.title) + "/no"), :class => 'btn btn-mini' %>
+          <%= link_to 'Vote Yes', (root_url + "votes/make_vote/" + url_encode( candidate.title ) + "/yes"), :class => 'btn btn-mini' %>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_candidate_path(candidate), :class => 'btn btn-mini' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
@@ -37,6 +38,13 @@
         </td>
       </tr>
     <% end %>
+    <tr>
+	    <td>New Issue: <input id="newIssue" type="text" placeholder="Input new issue here" /></td>
+	    <td>
+	    	<a class="btn btn-mini" href="javascript:void(0);" onClick="window.location.href = '<%= root_url%>votes/make_vote/' + document.getElementById('newIssue').value + '/no';">Vote No</a>
+	    	<a class="btn btn-mini" href="javascript:void(0);" onClick="window.location.href = '<%= root_url%>votes/make_vote/' + document.getElementById('newIssue').value + '/yes';">Vote Yes</a>
+        </td>
+    </tr>
   </tbody>
 </table>
 
