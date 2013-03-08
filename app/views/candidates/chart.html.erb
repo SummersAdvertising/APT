@@ -10,14 +10,14 @@
 	  <tr>
 	    <td width="10%"><img src="<%= image_path("icon-yes.png") %>" width="59" height="59" /></td>
 	    <td width="76%"><a style="width: <%= @candidate.vote_yes.to_f*100/@candidate.vote_total.to_f %>%;" class="bar"></a></td>
-	    <td width="14%" align="center" class="count <%= @candidate.vote_yes > @candidate.vote_no ? 'most' : '' %>"><%= @candidate.vote_yes %></td>
+	    <td width="14%" align="center" class="count <%= @candidate.vote_yes > @candidate.vote_no ? 'most' : '' %>"><%= @candidate.vote_yes %>票</td>
 	  </tr>
 	</table>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="no-bar">
 	  <tr>
 	    <td width="10%"><img src="<%= image_path("icon-no.png") %>" width="59" height="59" /></td>
 	    <td width="76%"><a style="width: <%= @candidate.vote_no.to_f*100/@candidate.vote_total.to_f %>%;" class="bar"></a></td>
-	    <td width="14%" align="center" class="count <%= @candidate.vote_yes < @candidate.vote_no ? 'most' : '' %>"><%= @candidate.vote_no %></td>
+	    <td width="14%" align="center" class="count <%= @candidate.vote_yes < @candidate.vote_no ? 'most' : '' %>"><%= @candidate.vote_no %>票</td>
 	  </tr>
 	</table>
 </div>
