@@ -9,12 +9,12 @@
 
 <script type=text/javascript>
 	document.getElementById("yes").addEventListener('click', function() {
-		window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=no,resizable=no,location=no, status=no');
+		window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no');
 		window.location.href = '<%= root_url%>votes/make_vote/<%= url_encode(@candidate.title)  %>/yes';
 	});
 	
 	document.getElementById("no").addEventListener('click', function() {
-		window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=no,resizable=no,location=no, status=no');
+		window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no');
 		window.location.href = '<%= root_url%>votes/make_vote/<%= url_encode(@candidate.title)  %>/no';
 
 	});
