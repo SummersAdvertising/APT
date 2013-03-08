@@ -8,6 +8,13 @@ class CandidatesController < ApplicationController
 	
 		@candidate = Candidate.where( :title => params[ :candidate_title ] ).first
 		
+		
+		if !cookies[ :voted_records ].nil?
+			records = ActiveSupport::JSON.decode(cookies[ :voted_records ])
+		else
+			records = Array.new
+		end
+		
 		if @candidate.nil?
 						
 			# The candidate doesn't exists
@@ -19,8 +26,26 @@ class CandidatesController < ApplicationController
 		
 		end
 		
+		isVoted = false
+		
+		catch :check_cookie do 
+			records.each do | record |
+				if record == @candidate.id
+					
+					isVoted = true					
+					throw :check_cookie
+				
+					
+				end
+			end
+		end
+		
 		respond_to do | format |
-			format.html { render 'vote' }
+			if isVoted 
+				format.html { redirect_to :action => 'chart_page', :candidate_title => Rack::Utils.escape( @candidate.title ) }
+			else
+				format.html { render 'vote' }
+			end
 			 
 		end
 			

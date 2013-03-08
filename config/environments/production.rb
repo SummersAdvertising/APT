@@ -1,3 +1,13 @@
+def compile_asset?(path)
+  if File.basename(path) =~ /^[^_].*\.\w+$/
+    puts "Compiling: #{path}"
+    true
+  else
+    puts "Ignoring: #{path}"
+    false
+  end
+end
+
 APT::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -60,6 +70,7 @@ APT::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  config.assets.precompile = [ method(:compile_asset?).to_proc ]
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
