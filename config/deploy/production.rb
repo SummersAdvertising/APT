@@ -1,6 +1,6 @@
 set :application, 	"apt"
 set :domain, 		"li406-49.members.linode.com"
-set :repository, 	"git@github.com:SummersAdvertising/apt.git"
+set :repository, 	"git@github.com:SummersAdvertising/APT.git"
 set :deploy_to,		"/var/spool/RoR-Projects/apt"
 
 role :app,		domain

@@ -1,4 +1,4 @@
-body{width:873px;height:260px;background:image-url("vote-bg.jpg") 0 0 no-repeat}
+body{width:873px;height:260px;background:<%= asset_data_uri "vote-bg.png" %> 0 0 no-repeat}
 h1{font:300 27px "微軟正黑體";color:#fff;margin:25px 0 0 0;text-align:center}
 
 /*---------------------------------------------------------------------------- 投票 ---*/
@@ -16,8 +16,8 @@ border-left:2px solid #012647;
 border-right:none}
 #button a:hover{background-color:#0256A6}
 
-#button #yes{background-image:image-url("yes.png")}
-#button #no{background-image:image-url("no.png")}
+#button #yes{background-image:<%= asset_data_uri "yes.png" %>}
+#button #no{background-image:<%= asset_data_uri "no.png" %>}
 
 /*---------------------------------------------------------------------------- 結果 ---*/
 
