@@ -1,0 +1,12 @@
+html{background:#E1E1E1}
+body{width:944px;border:1px solid #CFCFCF;border-top:none;padding:45px;margin:0 auto;background:#fff;font:300 15px "微軟正黑體";line-height:2em}
+a{text-decoration:none;font:300 15px "微軟正黑體"}
+
+#container{box-shadow:0 0 10px #aaa;border:1px solid #DADADA}
+
+#top{height:60px;text-align:right;background:url(../images/logo.png) 0 0 no-repeat;padding:10px 0 0 0}
+#top a {margin-left:30px;font:300 17px "微軟正黑體";color:#0065b2}
+#top a:hover{color:#1282D7}
+#top .active{border-bottom:3px solid #0065b2}
+
+#footer{font:300 13px "微軟正黑體";line-height:1.5em;padding:20px 35px;color:#888}

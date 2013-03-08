@@ -1,0 +1,14 @@
+body{width:740px;margin:0 auto;line-height:1.7em;font:300 15px "微軟正黑體"}
+#wrapper{border:1px solid #ddd;border-radius:10px;padding:10px 20px 20px 20px}
+.red{color:red}
+td{padding:15px 0;border-bottom:1px dashed #ddd}
+.comment{color:#999;font:300 12px "微軟正黑體"}
+
+p{line-height:1.7em;color:#555}
+
+.content input{padding:5px;width:80%}
+
+.buttons{text-align:center}
+.buttons input{background:#f2f2f2;padding:10px 30px;border-radius:5px;border:1px solid #ddd;font:300 20px "微軟正黑體";margin:20px 0 0 0;cursor:pointer}
+
+.buttons input:hover{background:#ddd}

@@ -1,0 +1,21 @@
+#banner{height:505px;background:url(../images/index-banner.jpg) 0 0 no-repeat}
+
+#main{position:relative}
+
+.article{padding:20px 35px 35px 35px;width:65%}
+.article h2{font:900 36px "微軟正黑體";color:#002463;height:100px}
+.article h3{font:900 18px "微軟正黑體";background:#FFE100;padding:3px 0 3px 10px }
+.article p{padding:10px}
+.article p span{font-size:12px;font-weight:300}
+
+.article #exm{width:253px;height:424px;background:url(../images/index-01.jpg) 0 0 no-repeat;position:absolute;right:20px;top:0}
+.article #exm a{position:absolute;bottom:45px;left:10px}
+.article #exm a:hover{bottom:47px}
+
+.chart{background:url(../images/index-chart.jpg) 0 0 no-repeat;width:913px;height:848px;margin:0 auto;position:relative}
+.chart a{position:absolute;top:214px;left:65px}
+.chart a:hover{top:212px}
+
+.video{padding:35px}
+.video h3{font:700 20px "微軟正黑體";color:#454545;height:35px}
+.video p{line-height:1.7em}

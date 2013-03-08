@@ -1,0 +1,16 @@
+#banner{height:215px;background:url(../images/pdt-banner.jpg) 0 0 no-repeat}
+
+.article{padding:0 0 0 310px}
+.article li{padding:0 0 0 20px;background:url(../images/li.jpg) left 10px no-repeat}
+.article li strong{color:#c9000b}
+.article h3{color:#c9000b;font:300 15px "微軟正黑體";margin:15px 0 }
+.article h3 strong{font:300 26px "微軟正黑體"}
+.article li a{text-decoration:underline;color:#0000ff}
+.article p{font-weight:900}
+
+#article-2{padding-bottom:500px;background:url(../images/pdt-04.jpg) center 280px no-repeat}
+#article-3 li span{font-size:12px}
+#article-5{height:350px;background:url(../images/pdt-07.jpg) center center no-repeat}
+
+#contact{width:806px;margin: auto}
+#contact h3{font:300 27px "微軟正黑體";color:#002c68}

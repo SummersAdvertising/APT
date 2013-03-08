@@ -1,6 +1,6 @@
 body{width:780px;margin:0 auto;font:300 15px "微軟正黑體"}
 
-#top{text-align:center;height:85px;padding:75px 0 0 0;background:url("<%= asset_data_uri "form-top.jpg" %>") center center no-repeat}
+#top{text-align:center;height:85px;padding:75px 0 0 0;background:url(../images/form-top.jpg) center center no-repeat}
 #top h1{color:#791f00;font:300 32px "微軟正黑體";height:45px}
 #top p{color:#777}
 
