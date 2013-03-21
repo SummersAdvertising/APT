@@ -6,11 +6,12 @@
 	<a class="btn btn-mini" id="yes" href="javascript:void(0);" > </a>
 	<a class="btn btn-mini" id="no" href="javascript:void(0);"> </a>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script type=text/javascript>
-	var formWin;
-
-	document.getElementById("yes").addEventListener('click', function() {
+	var formWin;	
+	
+	$('#yes').click(function() {
 		formWin = window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no');
 		
 		formWin.onload = function() {			
@@ -20,7 +21,7 @@
 		window.location.href = '<%= root_url%>votes/make_vote/<%= url_encode(@candidate.title)  %>/yes';
 	});
 	
-	document.getElementById("no").addEventListener('click', function() {
+	$('#no').click(function() {
 		formWin = window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no').document.title = "APT攻擊週爆！抽獎活動辦法";
 		
 		formWin.onload = function() {			
@@ -30,5 +31,6 @@
 		window.location.href = '<%= root_url%>votes/make_vote/<%= url_encode(@candidate.title)  %>/no';
 
 	});
+	
 
 </script>
