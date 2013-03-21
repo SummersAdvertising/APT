@@ -4,8 +4,9 @@ APT::Application.routes.draw do
   match 'candidates/chart_page/:candidate_title'	=> 'candidates#chart_page'
   match 'candidates/form'											=> 'candidates#form'
   
-  resources :candidates
+  #resources :candidates
   
+  match 'summers-admin/candidates/'											=> 'candidates#index'
 
   
   match 'votes/make_vote/:candidate_title/:vote_content'		=> 'votes#make_vote'
