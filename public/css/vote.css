@@ -1,9 +1,9 @@
-body{width:873px;height:260px;background:url(../images/vote-bg.jpg) 0 0 no-repeat}
-h1{font:300 27px "微軟正黑體";color:#fff;margin:25px 0 0 0;text-align:center}
+﻿body{width:873px;height:260px;background:url(../images/vote-bg.jpg) 0 0 no-repeat}
+h1{font:300 22px "微軟正黑體";color:#fff;text-align:center;height:60px;padding:45px 20px 0 20px}
 
 /*---------------------------------------------------------------------------- 投票 ---*/
 
-#button{width:402px;margin:50px auto 20px auto}
+#button{width:405px;overflow:hidden;margin: 0 auto}
 #button a{display:block;width:179px;height:97px;background-color:#024E96;border-radius:10px;background-position:center center;background-repeat:no-repeat;float:left;margin:10px;
 border-bottom:2px solid #012647;
 border-top:1px solid #739DC5;
