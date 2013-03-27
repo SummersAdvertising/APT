@@ -6,7 +6,7 @@
 	<a class="btn btn-mini" id="yes" href="javascript:void(0);" > </a>
 	<a class="btn btn-mini" id="no" href="javascript:void(0);"> </a>
 </div>
-<div id="view"><a href="#">觀看投票結果</a></div>
+<div id="view"><a href="<%= url_for( :controller => :candidates, :action => :chart_page ) %>">觀看投票結果</a></div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script type=text/javascript>
