@@ -13,7 +13,7 @@
 	var formWin;	
 	
 	$('#yes').click(function() {
-		formWin = window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no');
+		//formWin = window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no');
 		
 		formWin.onload = function() {			
 			formWin.document.title = "APT攻擊週爆！抽獎活動辦法";
@@ -23,7 +23,7 @@
 	});
 	
 	$('#no').click(function() {
-		formWin = window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no').document.title = "APT攻擊週爆！抽獎活動辦法";
+		//formWin = window.open('<%= url_for( :controller => :candidates, :action => 'form' ) %>', 'form', 'height=600, width=800, top=100, left=100, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no').document.title = "APT攻擊週爆！抽獎活動辦法";
 		
 		formWin.onload = function() {			
 			formWin.document.title = "APT攻擊週爆！抽獎活動辦法";
